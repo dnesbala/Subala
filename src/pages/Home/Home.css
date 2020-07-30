@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__description {
+  flex: 0.95;
+}
+
+.about__description p {
+  text-align: justify;
+  line-height: 22px;
+  padding: 1rem;
+}
+
+.about__image img {
+  object-fit: contain;
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 3rem;
+}
+
+.about__image img:hover {
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about__image img {
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,82 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba(163, 190, 65, 0.8),
+      rgba(255, 105, 180, 0.8)
+    ),
+    url("../../images/beauty_banner.jpg") center/cover no-repeat;
+  height: 400px;
+  object-fit: contain;
+  height: 90vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+.banner__info {
+  z-index: 100;
+  border: 1px solid lightgray;
+  padding: 1rem;
+}
+
+.banner__info h3 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+  animation: moveLeft 1s;
+}
+
+.banner__info .banner__button {
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  background-color: #ff69b4;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  height: 3rem;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  animation: moveUp 1s 0.2s backwards;
+}
+
+.banner__info .banner__button:hover {
+  background-color: palevioletred;
+  transform: translateY(-2px);
+  transition: all 0.5s ease;
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .banner__info h3 {
+    font-size: 2rem;
+  }
+}

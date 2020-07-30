@@ -1,0 +1,35 @@
+.service {
+  height: 300px;
+  width: 300px;
+  background-color: #f1eaea;
+  color: #474545;
+  border: 1px solid pink;
+  text-align: center;
+  padding: 1rem 0;
+  overflow: hidden;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.service:hover {
+  box-shadow: 2px 1px 2px 0px lightgrey;
+  transition: all 0.1s ease;
+}
+
+.service span {
+  font-size: 3rem;
+}
+
+.service span:hover {
+  color: #ff69b4;
+}
+
+.service h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.service p {
+  text-align: justify;
+  padding: 10px;
+}

@@ -1,0 +1,5 @@
+.shop__products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}

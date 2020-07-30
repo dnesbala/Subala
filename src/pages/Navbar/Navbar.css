@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff69b4;
+  color: #fff;
+  height: 4.5rem;
+}
+
+.navbar__title {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar__title span {
+  font-family: "Kaushan Script", cursive;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__list li {
+  list-style-type: none;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2rem;
+  font-size: 1.1rem;
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+  color: #e9e1e1;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    height: 6.5rem;
+  }
+
+  .navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .navbar__link {
+    font-size: 1rem;
+  }
+}
